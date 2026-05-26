@@ -2,12 +2,12 @@ import { test } from '../Fixtures/loginfixture';
 import { readFileSync } from 'fs';
 
 test.describe('test suite', () => {
-    // test('navigate and login to book my show',{tag:['@smoket']}, async ({loginPage, homePage}) => {
+    test('navigate and login to book my show',{tag:['@smoket']}, async ({loginPage, homePage}) => {
 
-    //     await loginPage.login('practice','SuperSecretPassword!');
+        await loginPage.login('practice','SuperSecretPassword!');
         
-    //     await homePage.validateHomePage();
-    // });
+        await homePage.validateHomePage();
+    });
     // test('read Json file',async ({}) => {
     //     const data= await JSON.parse(readFileSync('./test-data/productsData.json', 'utf-8'));
     //     const productName=data.Car
@@ -16,7 +16,7 @@ test.describe('test suite', () => {
     //         console.log("product name: "+product.name);
     //         console.log("product name: "+product.description);
     //     }
-//     }
+    // });
 test('get second highest occurrence of a number in an array',async ({}) => {
     const arr=[1,1,2,3,4,5,6,7,8,9,10,1,2,3,4,1,4,5,6,7,8,9];
     const countMap=new Map();  
